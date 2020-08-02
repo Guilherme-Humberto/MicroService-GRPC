@@ -8,7 +8,14 @@
  O gRPC é um serviço de alto desempenho para atender chamadas RPC (Remote Call Procedures). Open source e que pode ser executado em qualquer ambiente. Permite que o aplicativo client-server se comuniquem de forma transparente. Com suporte a load balance, tracing, health-check e autenticação. Facilitando a comunicação entre sistemas.
 </h4>
 
-## Inicialização das aplicações
+## Iniciar a api
 
-- Na pasta my-app-api digite npm install ou yarn install para começar as instalações. Despois digite yarn ou npm dev:server para iniciar
-- Na pasta my-app-microserver digite npm install ou yarn install para começar as instalações. Em seguida yarn ou npm dev:micro para iniciar
+- Vá até a pasta my-app-api
+- Digite npm ou yarn install para iniciar as instalações
+- Digite npm ou yarn dev:server para iniciar o nodemon
+
+## Iniciar o microservice
+
+- Vá até a pasta my-app-microserver
+- Digite npm ou yarn install para iniciar as instalações
+- Digite npm ou yarn dev:micro para iniciar o nodemon
