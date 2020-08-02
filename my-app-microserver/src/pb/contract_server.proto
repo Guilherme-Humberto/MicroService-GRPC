@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+// Definição de estrutura do usuario
+message User {
+    string id = 1;
+    string username = 2;
+    string email = 3;
+    string password = 4;
+}
+
+message getUserByIdRequest {
+    string id = 1;
+}
+
+message registerUserRequest {
+    User user = 1;
+}
+
+message loginUserRequest {
+    User user = 1;
+}
+
+message loginResponse {
+    string token = 1;
+}
+
+message UserResponse {
+    User user = 1;
+}
+
+// Criação dos serviços
+service UserService {
+    rpc getUserById(getUserByIdRequest) returns (UserResponse);
+    rpc registerUser(registerUserRequest) returns (UserResponse);
+    rpc loginUser(loginUserRequest) returns (loginResponse);
+}
