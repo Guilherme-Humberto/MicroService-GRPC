@@ -7,7 +7,7 @@ const loaderConfig = require('./config/index')
 require('./db/connetion/index')
 require('./db/schemas/index')
 
-// Configurção para carregar arquivos .proto
+// Configuração para carregar arquivos .proto
 const packageDefinition = protoLoader.loadSync(
 path.resolve(__dirname, 'pb', 'contract_server.proto'),
     loaderConfig
